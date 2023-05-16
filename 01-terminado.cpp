@@ -117,6 +117,9 @@ int main()
 	} while (numero != -1);
 	
 	imprimirArbol(raiz);
+
+	int z ;
+	cin>>z;
 	
 	return 0;
 }
