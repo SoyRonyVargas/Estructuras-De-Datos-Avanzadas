@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/Darth/Documents/GitHub/Estructuras de datos avanzadas",
-      "program": "c:/Users/Darth/Documents/GitHub/Estructuras de datos avanzadas/output/01.exe",
+      "program": "c:/Users/Darth/Documents/GitHub/Estructuras de datos avanzadas/output/02-arbol-binario.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
