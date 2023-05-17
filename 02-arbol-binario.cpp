@@ -13,7 +13,7 @@ struct Nodo {
         derecho = NULL;
     }
 };
-
+//
 Nodo* insertarNodo( Nodo* nodo , int numero )
 {
     
