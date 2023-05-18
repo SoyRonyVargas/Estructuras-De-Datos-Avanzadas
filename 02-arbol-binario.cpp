@@ -3,7 +3,9 @@
 using namespace std;
 
 struct Nodo {
+    
     int valor;
+    
     Nodo* izquierdo;
     Nodo* derecho;
 
@@ -13,7 +15,28 @@ struct Nodo {
         derecho = NULL;
     }
 };
-//
+
+void imprimirArbolAscendente(Nodo* nodo )
+{
+
+    if( nodo == NULL ) return;
+
+    imprimirArbolAscendente(nodo->izquierdo);
+    cout<<nodo->valor<<endl;
+    imprimirArbolAscendente(nodo->derecho);
+}
+
+void imprimirArbolDescendente(Nodo* nodo )
+{
+
+    if( nodo == NULL ) return;
+
+    imprimirArbolDescendente(nodo->derecho);
+    cout<<nodo->valor<<endl;
+    imprimirArbolDescendente    (nodo->izquierdo);
+}
+
+
 Nodo* insertarNodo( Nodo* nodo , int numero )
 {
     
@@ -56,6 +79,16 @@ int main()
         raiz = insertarNodo(raiz , numero);
 
     }
+
+    system("cls");
+
+    cout<<"Arbol Ascendente"<<endl;
+    
+    imprimirArbolAscendente(raiz);
+    
+    cout<<"Arbol Descendente"<<endl;
+    
+    imprimirArbolDescendente(raiz);
 
 }
 
